@@ -67,54 +67,115 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Luxury Wedding Color Palette
+				// Enhanced Luxury Wedding Color Palette
 				saffron: {
-					50: '#fff7ed',
-					100: '#ffedd5',
-					200: '#fed7aa',
-					300: '#fdba74',
-					400: '#fb923c',
-					500: '#f97316', // Main saffron
-					600: '#ea580c',
-					700: '#c2410c',
-					800: '#9a3412',
-					900: '#7c2d12',
+					50: '#FFF9F0',
+					100: '#FFF0DC',
+					200: '#FFE4BA',
+					300: '#FFD088',
+					400: '#FFB84D',
+					500: '#FF9933', // Deep Saffron
+					600: '#E6841A',
+					700: '#CC6600',
+					800: '#B85C00',
+					900: '#994D00',
 				},
 				maroon: {
-					50: '#fdf2f8',
-					100: '#fce7f3',
-					200: '#fbcfe8',
-					300: '#f9a8d4',
-					400: '#f472b6',
-					500: '#ec4899',
-					600: '#db2777',
-					700: '#be185d', // Deep maroon
-					800: '#9d174d',
-					900: '#831843',
+					50: '#FDF2F5',
+					100: '#FCE7ED',
+					200: '#F9CFD9',
+					300: '#F5A8BD',
+					400: '#EF7699',
+					500: '#E54876',
+					600: '#D62E5D',
+					700: '#B21E47',
+					800: '#6D1A36', // Rich Maroon
+					900: '#5A1529',
 				},
 				gold: {
-					50: '#fffbeb',
-					100: '#fef3c7',
-					200: '#fde68a',
-					300: '#fcd34d',
-					400: '#fbbf24',
-					500: '#f59e0b', // Main gold
-					600: '#d97706',
-					700: '#b45309',
-					800: '#92400e',
-					900: '#78350f',
+					50: '#FFFCF0',
+					100: '#FFF8DC',
+					200: '#FFF0B8',
+					300: '#FFE485',
+					400: '#FFD54F',
+					500: '#D4AF37', // Royal Gold
+					600: '#B8941F',
+					700: '#9C7A08',
+					800: '#806200',
+					900: '#664F00',
 				},
 				rosegold: {
-					50: '#fdf4ff',
-					100: '#fae8ff',
-					200: '#f5d0fe',
-					300: '#f0abfc',
-					400: '#e879f9',
-					500: '#d946ef', // Rose gold
-					600: '#c026d3',
-					700: '#a21caf',
-					800: '#86198f',
-					900: '#701a75',
+					50: '#FDF4F6',
+					100: '#FBEAED',
+					200: '#F7D5DB',
+					300: '#F1B5C0',
+					400: '#E98FA4',
+					500: '#B76E79', // Rose Gold
+					600: '#A45B66',
+					700: '#8F4853',
+					800: '#7A3540',
+					900: '#65222D',
+				},
+				// New Jewel Tone Accents
+				emerald: {
+					50: '#F0FDFA',
+					100: '#CCFBF1',
+					200: '#99F6E4',
+					300: '#5EEAD4',
+					400: '#2DD4BF',
+					500: '#04675C', // Emerald Green
+					600: '#0D9488',
+					700: '#0F766E',
+					800: '#115E59',
+					900: '#134E4A',
+				},
+				ruby: {
+					50: '#FEF2F2',
+					100: '#FEE2E2',
+					200: '#FECACA',
+					300: '#FCA5A5',
+					400: '#F87171',
+					500: '#C32148', // Ruby Red
+					600: '#DC2626',
+					700: '#B91C1C',
+					800: '#991B1B',
+					900: '#7F1D1D',
+				},
+				indigo: {
+					50: '#EEF2FF',
+					100: '#E0E7FF',
+					200: '#C7D2FE',
+					300: '#A5B4FC',
+					400: '#818CF8',
+					500: '#2B3A67', // Indigo Blue
+					600: '#4F46E5',
+					700: '#4338CA',
+					800: '#3730A3',
+					900: '#312E81',
+				},
+				charcoal: {
+					50: '#F8F8F8',
+					100: '#F0F0F0',
+					200: '#E4E4E4',
+					300: '#D1D1D1',
+					400: '#B4B4B4',
+					500: '#9A9A9A',
+					600: '#818181',
+					700: '#6A6A6A',
+					800: '#3B3B3B', // Warm Charcoal
+					900: '#2A2A2A',
+				},
+				champagne: {
+					50: '#F9F6EF', // Champagne/Ivory
+					100: '#F5F0E6',
+					200: '#EDE4D3',
+					300: '#E3D5BB',
+					400: '#D7C3A0',
+					500: '#C9B087',
+					600: '#B89D70',
+					700: '#A3895C',
+					800: '#8A734A',
+					900: '#6F5E3A',
 				}
 			},
 			borderRadius: {
@@ -144,11 +205,11 @@ export default {
 					'50%': { transform: 'translateY(-20px)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 5px rgba(251, 146, 60, 0.5)' },
-					'50%': { boxShadow: '0 0 20px rgba(251, 146, 60, 0.8), 0 0 30px rgba(251, 146, 60, 0.6)' }
+					'0%, 100%': { boxShadow: '0 0 8px rgba(255, 153, 51, 0.6)' },
+					'50%': { boxShadow: '0 0 25px rgba(255, 153, 51, 0.9), 0 0 35px rgba(212, 175, 55, 0.7)' }
 				},
 				'sparkle': {
-					'0%, 100%': { opacity: '0.3', transform: 'scale(0.8)' },
+					'0%, 100%': { opacity: '0.4', transform: 'scale(0.8)' },
 					'50%': { opacity: '1', transform: 'scale(1.2)' }
 				},
 				'slide-in-up': {
@@ -158,6 +219,10 @@ export default {
 				'fade-in-scale': {
 					'0%': { transform: 'scale(0.8)', opacity: '0' },
 					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'shimmer': {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' }
 				}
 			},
 			animation: {
@@ -167,7 +232,8 @@ export default {
 				'glow': 'glow 2s ease-in-out infinite',
 				'sparkle': 'sparkle 2s ease-in-out infinite',
 				'slide-in-up': 'slide-in-up 0.8s ease-out',
-				'fade-in-scale': 'fade-in-scale 0.6s ease-out'
+				'fade-in-scale': 'fade-in-scale 0.6s ease-out',
+				'shimmer': 'shimmer 3s ease-in-out infinite'
 			}
 		}
 	},

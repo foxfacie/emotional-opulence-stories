@@ -12,15 +12,17 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-saffron-50 via-gold-50 to-rosegold-50">
+    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-champagne-50 via-gold-100 to-saffron-100">
       {/* Background Video Placeholder with Animation */}
-      <div className="absolute inset-0 bg-gradient-to-r from-saffron-400/20 via-gold-400/20 to-maroon-400/20">
+      <div className="absolute inset-0">
         <img 
           src="https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=1920&q=80"
           alt="Luxury Indian Wedding"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         />
+        {/* Enhanced overlay for better text visibility */}
+        <div className="absolute inset-0 text-overlay"></div>
       </div>
 
       {/* Floating Particles */}
@@ -33,14 +35,14 @@ const HeroSection = () => {
       <div className="relative z-10 flex items-center justify-center h-full px-4">
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-fade-in-scale">
-            <h1 className="text-6xl md:text-8xl font-bold text-maroon-800 mb-6 text-shadow-luxury">
-              <span className="inline-block animate-slide-in-up">Saath</span>{' '}
-              <span className="inline-block animate-slide-in-up" style={{ animationDelay: '0.2s' }}>Nibhana</span>
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 text-shadow-luxury">
+              <span className="inline-block animate-slide-in-up gold-shimmer bg-clip-text text-transparent">Saath</span>{' '}
+              <span className="inline-block animate-slide-in-up text-gold-300" style={{ animationDelay: '0.2s' }}>Nibhana</span>
             </h1>
-            <p className="text-xl md:text-2xl text-maroon-600 mb-8 animate-slide-in-up font-light" style={{ animationDelay: '0.4s' }}>
+            <p className="text-xl md:text-2xl text-champagne-100 mb-8 animate-slide-in-up font-light text-shadow-gold" style={{ animationDelay: '0.4s' }}>
               Crafting Once-in-a-Lifetime Emotional Journeys
             </p>
-            <p className="text-lg text-maroon-500 mb-12 max-w-2xl mx-auto animate-slide-in-up" style={{ animationDelay: '0.6s' }}>
+            <p className="text-lg text-champagne-200 mb-12 max-w-2xl mx-auto animate-slide-in-up" style={{ animationDelay: '0.6s' }}>
               Where tradition meets luxury, and every moment becomes a treasured memory. 
               Experience the artistry of authentic Indian wedding celebrations.
             </p>
@@ -49,14 +51,14 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-in-up" style={{ animationDelay: '0.8s' }}>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-saffron-500 to-gold-500 hover:from-saffron-600 hover:to-gold-600 text-white px-8 py-4 text-lg font-semibold hover-lift animate-glow rounded-full"
+              className="btn-luxury text-white px-8 py-4 text-lg font-semibold hover-lift rounded-full"
             >
               Begin Your Journey
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-maroon-300 text-maroon-700 hover:bg-maroon-50 px-8 py-4 text-lg font-semibold hover-lift rounded-full"
+              className="border-2 border-gold-300 text-gold-200 hover:bg-gold-500/20 hover:text-white px-8 py-4 text-lg font-semibold hover-lift rounded-full backdrop-blur-sm"
             >
               View Portfolio
             </Button>
@@ -66,10 +68,10 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-maroon-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-maroon-400 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-gold-300 rounded-full flex justify-center backdrop-blur-sm">
+          <div className="w-1 h-3 bg-gold-300 rounded-full mt-2 animate-pulse"></div>
         </div>
-        <p className="text-maroon-600 text-sm mt-2 font-medium">Scroll to explore</p>
+        <p className="text-champagne-200 text-sm mt-2 font-medium text-shadow-gold">Scroll to explore</p>
       </div>
     </section>
   );
